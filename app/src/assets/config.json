@@ -1,0 +1,8 @@
+{
+  "msal": {
+    "clientId": "d7ed8681-2efc-4daa-90ff-f43be32efe36",
+    "authority": "https://edwintesting.ciamlogin.com/",
+    "redirectUri": "/",
+    "postLogoutRedirectUri": "/"
+  }
+}

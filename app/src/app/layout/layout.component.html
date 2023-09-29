@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <a class="title" href="/">{{ title }}</a>
+
+  <div class="toolbar-spacer"></div>
+
+  <!-- <a mat-button [routerLink]="['/drugs/create']">Create</a>
+  <a mat-button [routerLink]="['/drugs']">Dashboard</a>
+  <a mat-button [routerLink]="['/drugs/destructions']">Destructions</a> -->
+
+  <a mat-button [matMenuTriggerFor]="menu">Menu</a>
+  <mat-menu #menu>
+    <button mat-menu-item (click)="changeFacility()">Change Facility</button>
+  </mat-menu>
+  <button mat-raised-button *ngIf="loginDisplay" (click)="logout()">Logout</button>
+
+</mat-toolbar>
+<router-outlet ></router-outlet>
